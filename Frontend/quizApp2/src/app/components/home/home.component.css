@@ -1,0 +1,95 @@
+body{
+    background: linear-gradient(45deg,#c9c8c8,#f7f7f7) ;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+  }
+  .correct{
+      background-color: green;
+      color:white;
+  }
+  .incorrect{
+      background-color: red;
+      color: white;
+  }
+  .question-container{
+      margin-bottom: 20px;
+  }
+  .home-container {
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 80%;
+      background-color: #8a2be2;
+      border-radius: 30px;
+    } 
+    .title {
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 2rem;
+      color: #ffffff;
+    }
+    .no-exams {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #666;
+    }
+    .exam-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .exam-card {
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #d5d3d3;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .exam-card:hover {
+      transform: scale(1.02);
+    }
+    .exam-card-header {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+    }
+    .exam-icon {
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+      margin-right: 10px;
+    }
+    .exam-title {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .exam-description {
+      color: #b8b8b8;
+    }
+    .exam-duration {
+      color: #777;
+      font-size: 1rem;
+    }
+    .exam-card-footer {
+      padding: 15px;
+      text-align: center;
+    }
+    .start-button {
+      background-color: #f4c300;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .start-button:hover {
+      background-color: #f6f6f8;
+    }
+   
+   
+   

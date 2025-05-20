@@ -1,0 +1,34 @@
+
+<body>
+    <div class="exam-container"
+     *ngIf="questions.length > 0">
+      <h2>{{ questions[currentQuestionIndex].text }}</h2>
+      <ul>
+        <li *ngFor="let option of currentOptions" (click)="selectOption(option)" [ngClass]="{
+                'correct': option.isCorrect && feedback !== null,
+                'selected-incorrect': option === selectedOption && feedback === 'incorrect',
+                'selected-correct': option === selectedOption && feedback === 'correct',
+                'correct-but-not-selected': option === getCorrectOption() && feedback === 'incorrect'
+              }">
+          {{ option.text }}
+        </li>
+      </ul>
+      <div class="feedback" *ngIf="feedback !== null">
+        <p *ngIf="feedback === 'correct'" class="feedback-correct">Correct!</p>
+        <p *ngIf="feedback === 'incorrect'" class="feedback-incorrect">
+          Incorrect. The correct answer is: {{ getCorrectAnswerText() }}
+        </p>
+      </div>
+      <div class="abc">
+        <button class="button-next" (click)="nextQuestion()" [disabled]="currentQuestionIndex >= questions.length - 1">
+          Next Question
+        </button>
+     
+        <button class="button-finish" *ngIf="currentQuestionIndex===questions.length-1" (click)="finishExam()">
+          Finish Exam
+        </button>
+    </div>
+    </div>  
+    </body>
+     
+     
