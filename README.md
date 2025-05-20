@@ -11,6 +11,7 @@ Bu proje, kullanıcıların sınavlara erişip etkileşimli şekilde çözebilec
 ---
 
 🔄 Uygulama Akışı
+
 Ana sayfada kullanıcıya sınavlar listelenir.
 
 Kullanıcı sınavı başlattığında sorular ve şıkları görür.
