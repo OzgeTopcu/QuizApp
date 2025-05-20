@@ -10,15 +10,16 @@ Bu proje, kullanıcıların sınavlara erişip etkileşimli şekilde çözebilec
 
 ---
 
-## 🧱 Katmanlı Mimari (N-Tier Architecture)
+🔄 Uygulama Akışı
+Ana sayfada kullanıcıya sınavlar listelenir.
 
-Quiz App, yazılım geliştirme prensiplerinden olan **ayrık sorumluluk** ilkesine uygun olarak katmanlara ayrılmıştır. Her katman sadece kendi görevinden sorumludur. Bu sayede:
+Kullanıcı sınavı başlattığında sorular ve şıkları görür.
 
-- Kod okunabilirliği ve bakımı kolaylaşır  
-- Katmanlar bağımsız geliştirilebilir/test edilebilir  
-- Genişletilebilir ve sürdürülebilir bir yapı elde edilir
+Her soru cevaplandıktan sonra doğru/yanlış durumu anında belirtilir.
 
+Tüm sorular tamamlandığında sonuç ekranı görüntülenir.
 
+---
 
 ## ⚙️ Kullanılan Teknolojiler
 
@@ -35,3 +36,5 @@ Quiz App, yazılım geliştirme prensiplerinden olan **ayrık sorumluluk** ilkes
 - RxJS
 - Angular Router
 - Tailwind CSS (veya Bootstrap)
+
+  
